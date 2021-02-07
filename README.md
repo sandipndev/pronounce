@@ -1,3 +1,3 @@
 # Pronounce
 
-Speak through the world! ✈
+Speak around the world! ✈
