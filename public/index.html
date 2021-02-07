@@ -1,95 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png" />
 
-    <title>Pronounce</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
 
-    <meta
-      name="description"
-      content="A game which checks if you can speak in a language that you do not know!"
-    />
-    <meta
-      property="og:description"
-      content="A game which checks if you can speak in a language that you do not know!"
-    />
-    <meta property="og:title" content="Pronounce" />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/sandipndev/pronounce/main/public/favicon.png"
-    />
-    <meta property="og:url" content="spkt.xyz" />
-    <meta property="og:site_name" content="Say it" />
-    <meta
-      name="twitter:description"
-      content="A game which checks if you can speak in a language that you do not know!"
-    />
+  <title>Pronounce</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <meta name="description" content="Speak around the world with Pronounce">
+  <meta property="og:description" content="Speak around the world!">
+  <meta property="og:title" content="Pronounce">
+  <meta property="og:image" content="https://raw.githubusercontent.com/sandipndev/pronounce/main/public/favicon.png">
+  <meta property="og:url" content="pronouce.vercel.app">
+  <meta property="og:site_name" content="Pronounce">
+  <meta name="twitter:description" content="Speak around the world with Pronounce">
 
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
+  <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+</head>
 
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: "716646248519992x",
-          xfbml: true,
-          version: "v2.8",
-        });
-        FB.AppEvents.logPageView();
-      };
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
 
-      (function(d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '7xx1664624851xxx',
+        xfbml: true,
+        version: 'v2.8'
+      });
+      FB.AppEvents.logPageView();
+    };
 
-    <script>
-      (function(i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function() {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
-      ga("create", "UA-101656229x-1", "auto");
-      ga("send", "pageview");
-    </script>
-  </body>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1xxx56229x-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
 </html>
