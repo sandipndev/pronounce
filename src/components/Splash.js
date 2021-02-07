@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Recognition from '../service/Recognition';
-import Speak from '../service/Speak';
+import Recognition from "../service/Recognition";
+import Speak from "../service/Speak";
 
-import Game from './Game';
-import PermissionDenied from './PermissionDenied';
-import Unsupported from './Unsupported';
+import Game from "./Game";
+import PermissionDenied from "./PermissionDenied";
+import Unsupported from "./Unsupported";
 
 class Splash extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      language: 'ar-EG',
+      language: "ar-EG",
       gameStarted: false,
       permission: true,
       unsupported: false,
@@ -54,18 +54,25 @@ class Splash extends Component {
     }
 
     if (gameStarted) {
-      return <Game language={language} speak={this.speak} recognition={this.recognition} />;
+      return (
+        <Game
+          language={language}
+          speak={this.speak}
+          recognition={this.recognition}
+        />
+      );
     }
 
     return (
       <div>
-        <h1 className="gap-bottom">Speakit!</h1>
+        <h1 className="gap-bottom">Pronounce!</h1>
         <p className="gap-bottom">
-          A game which checks if you can speak<br />
-        in a language that you do not know.
+          A game which checks if you can speak
+          <br />
+          in a language that you do not know.
         </p>
         <p className="gap-bottom-large">
-          Listen the sentence and try to Speakit!
+          Listen the sentence and try to Pronounce!
         </p>
 
         <div className="gap-bottom-large">

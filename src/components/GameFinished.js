@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class GameFinished extends Component {
   constructor(props, context) {
@@ -18,8 +18,8 @@ class GameFinished extends Component {
     const { score } = this.props;
 
     window.FB.ui({
-      method: 'share',
-      href: 'https://spkt.xyz',
+      method: "share",
+      href: "https://spkt.xyz",
       quote: `My score: ${score}. Try yourself with a language that you don't know!`,
     });
   }
@@ -27,23 +27,26 @@ class GameFinished extends Component {
   handleTwitterShare() {
     const { score } = this.props;
 
-    const url = `https://twitter.com/share?url=${window.location
-      .href}&hashtags=sayit&text=I just got ${score} points in Speakit!.`;
+    const url = `https://twitter.com/share?url=${window.location.href}&hashtags=sayit&text=I just got ${score} points in Pronounce!.`;
 
     const width = 550;
     const height = 400;
 
     const windowWidth =
-      window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth;
 
     const windowHeight =
-      window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight;
 
     const left = (windowWidth - width) / 2;
     const top = (windowHeight - height) / 2;
 
     const popupOptions = `status=1,width=${width},height=${height},top=${top},left=${left}`;
-    window.open(url, 'twitter', popupOptions);
+    window.open(url, "twitter", popupOptions);
   }
 
   render() {
@@ -62,10 +65,12 @@ class GameFinished extends Component {
         <br />
         <p className="gap-bottom">Share Your Score</p>
         <div className="buttonGroup gap-bottom-large">
-          <button className="button facebook" onClick={this.handleFacebookShare}>
+          <button
+            className="button facebook"
+            onClick={this.handleFacebookShare}
+          >
             Facebook
-          </button>
-          {' '}
+          </button>{" "}
           <button className="button twitter" onClick={this.handleTwitterShare}>
             Twitter
           </button>
