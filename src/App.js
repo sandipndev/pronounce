@@ -10,7 +10,9 @@ const App = () => (
       <div className="aligner-item aligner-item-top">
         <Logo />
       </div>
-      <div className="aligner-item text-center">{/* <Splash /> */}</div>
+      <div className="aligner-item text-center">
+        <Splash />
+      </div>
       <div className="aligner-item aligner-item-bottom">
         <Footer />
       </div>
